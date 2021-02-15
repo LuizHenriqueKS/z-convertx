@@ -32,6 +32,8 @@ import convertx from 'z-convertx';
 [convertBitsMatrixToText](#convertBitsMatrixToText)
 [convertBitsArrayToText](#convertBitsArrayToText)
 [convertBitsToText](#convertBitsToText)
+[convertNumberToBits](#convertNumberToBits)
+[convertNumberToBitsArray](#convertNumberToBitsArray)
 
 # append
 
@@ -138,3 +140,30 @@ function convertBitsArrayToText(bits: number[], bitsByChar: number): string
 ```typescript
 function convertBitsToText(bits: string[]): string
 ```
+
+# convertNumberToBits
+
+```typescript
+function convertNumberToBits(num: number, options: Options = {}): string
+```
+
+Options:
+```typescript
+interface Options {
+  maxLength?: number;
+}
+```
+
+# convertNumberToBitsArray
+
+```typescript
+function convertNumberToBitsArray(num: number, options: Options = {}): number[]
+```
+
+Options:
+```typescript
+interface Options {
+  maxLength?: number;
+}
+```
+
