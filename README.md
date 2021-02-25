@@ -34,6 +34,7 @@ import convertx from 'z-convertx';
 [convertBitsToText](#convertBitsToText)
 [convertNumberToBits](#convertNumberToBits)
 [convertNumberToBitsArray](#convertNumberToBitsArray)
+[convertNumberToBytesArray](#convertNumberToBytesArray)
 
 # append
 
@@ -167,3 +168,21 @@ interface Options {
 }
 ```
 
+# convertNumberToBytesArray
+
+```typescript
+function convertNumberToBytesArray(num: number, options?: Options): number[]
+```
+
+Options:
+```typescript
+interface Options {
+  maxLength?: number;
+}
+```
+
+# convertNumberToBytesArray
+
+```typescript
+function convertBytesArrayToNumber(bytesArray: number[]): number
+```

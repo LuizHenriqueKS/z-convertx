@@ -14,6 +14,9 @@ import convertBitsToText from './core/convertBitsToText';
 import convertNumberToBits from './core/convertNumberToBits';
 import convertNumberToBitsArray from './core/convertNumberToBitsArray';
 
+import convertNumberToBytesArray from './core/convertNumberToBytesArray';
+import convertBytesArrayToNumber from './core/convertBytesArrayToNumber';
+
 module.exports = {
   append,
   appendStart,
@@ -29,7 +32,10 @@ module.exports = {
   convertBitsToText,
 
   convertNumberToBits,
-  convertNumberToBitsArray
+  convertNumberToBitsArray,
+
+  convertNumberToBytesArray,
+  convertBytesArrayToNumber
 };
 
 export { default as append } from './core/append';
@@ -47,3 +53,6 @@ export { default as convertBitsToText } from './core/convertBitsToText';
 
 export { default as convertNumberToBits } from './core/convertNumberToBits';
 export { default as convertNumberToBitsArray } from './core/convertNumberToBitsArray';
+
+export { default as convertNumberToBytesArray } from './core/convertNumberToBytesArray';
+export { default as convertBytesArrayToNumber } from './core/convertBytesArrayToNumber';

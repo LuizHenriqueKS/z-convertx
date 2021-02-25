@@ -17,6 +17,21 @@
         "${workspaceRoot}/node_modules/jest/bin/jest.js",
         "--runInBand"
       ]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Run a test",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "console": "integratedTerminal",
+      "runtimeArgs": [
+        "--inspect-brk",
+        "${workspaceRoot}/node_modules/jest/bin/jest.js",
+        "${fileBasename}",
+        "--runInBand"
+      ]
     }
   ]
 }
